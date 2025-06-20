@@ -1,20 +1,11 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next';
+import { hardman, abcDiatype, suisseIntl } from './fonts/local-fonts';
+import { ibmPlexMono } from './fonts/ibm-plex';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Photosynthesis",
-  description: "",
+  title: 'Photosynthesis',
+  description: '',
 };
 
 export default function RootLayout({
@@ -25,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${hardman.variable} ${abcDiatype.variable} ${suisseIntl.variable} ${ibmPlexMono.variable}`}
       >
         {children}
       </body>
