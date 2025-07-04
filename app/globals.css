@@ -13,6 +13,8 @@
   --font-diatype: var(--font-abc-diatype);
   --font-suisse: var(--font-suisse-intl);
   --font-mono: var(--font-ibm-plex-mono);
+
+  --tracking-2: -0.02em;
 }
 
 @media (prefers-color-scheme: dark) {
